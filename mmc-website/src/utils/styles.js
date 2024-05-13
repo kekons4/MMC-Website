@@ -1,9 +1,17 @@
 import { makeStyles } from "@mui/styles";
+import { blueGrey } from "@mui/material/colors";
 
 const useStyles = makeStyles((theme) => ({
+    appbar: {
+        backgroundColor: "#607d8b"
+    },
     container: {
         backgroundColor: "#efefef",
-        padding: theme.spacing(8, 0, 6)
+        padding: theme.spacing(14, 0, 6)
+    },
+    consulting: {
+        color: "#d32f2f",
+        fontWeight: "400"
     },
     icon: {
         marginRight: '20px'

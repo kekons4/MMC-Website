@@ -1,33 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
+import {Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container, Button, ButtonGroup, createTheme} from '@mui/material';
+import useStyles from './utils/styles';
+
+// User Defined modules
+import Navbar from './navbar/navbar';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const classes = useStyles();
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CssBaseline />
+      <Navbar/>
+      <main className={classes.container}>
+        <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400}} gutterBottom>Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
+      </main>
     </>
   )
 }
