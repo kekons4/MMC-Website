@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         backgroundColor: "#efefef",
-        padding: theme.spacing(14, 0, 6)
+        padding: theme.spacing(8, 0, 6)
     },
     consulting: {
         color: "#d32f2f",
