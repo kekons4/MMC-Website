@@ -7,11 +7,13 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         backgroundColor: "#efefef",
-        padding: theme.spacing(8, 0, 6)
+        padding: theme.spacing(14, 0, 6),
+        fontFamily: "Cabin"
     },
     consulting: {
         color: "#d32f2f",
-        fontWeight: "400"
+        fontWeight: "400",
+        fontFamily: "Cabin"
     },
     icon: {
         marginRight: '20px'
