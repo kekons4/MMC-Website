@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import { CardMedia, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { CardActionArea, CardMedia, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 const StyledTile = styled(Card)(({ theme }) => ({
     color: "black",
@@ -15,8 +15,10 @@ const StyledTile = styled(Card)(({ theme }) => ({
 function ProblemTile(props) {
     return (
         <StyledTile variant="outlined">
-            <Typography variant='h6'>{props.props.text}</Typography>
-            <CardMedia component="img" image={props.props.imgSrc} title={props.props.alt} style={{width: "100%", height: "100%"}} />
+            <CardActionArea>
+                <Typography variant='h6'>{props.props.text}</Typography>
+                <CardMedia component="img" image={props.props.imgSrc} title={props.props.alt} style={{width: "100%", height: "100%"}} />
+            </CardActionArea>
         </StyledTile>
     );
 }
