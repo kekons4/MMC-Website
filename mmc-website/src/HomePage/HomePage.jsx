@@ -31,7 +31,7 @@ function HomePage() {
                                 </a>
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="/" style={{textDecoration: "none"}}>
+                                <a href="#test" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/forging.png", alt: "image of forging problems solved by MMC", text: "Forging"}} />
                                 </a>                            
                             </Grid>
@@ -59,55 +59,55 @@ function HomePage() {
                     </Grid>
                 </Grid>
             </Container>
-            <Container maxWidth="2xl" sx={{marginTop: "5rem", padding: "5rem", borderTop: "2px dotted #d32f2f"}}>
+            <Container maxWidth="lg" sx={{marginTop: "5rem", padding: "5rem", borderTop: "2px dotted #d32f2f"}}>
                 <Grid container spacing={16} direction="column" justifyContent="center" alignItems="center">
                     <Grid id="microstructures" item xs={2} sm={4} md={6}>
-                        <Card>
-                            <Typography variant='h4' gutterBottom sx={{padding: "1rem"}}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                3D Printing polymer based shells
+                            </Typography>
+                            <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid id="test" item xs={2} sm={4} md={6}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Microstructure-Based Modeling of Polycrystalline Metals
                             </Typography>
                             <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
-                                <Typography gutterBottom variant='h6' component="div">
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
                                     Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid id="microstructures" item xs={2} sm={4} md={6}>
-                        <Card>
-                            <Typography variant='h4' gutterBottom sx={{padding: "1rem"}}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Microstructure-Based Modeling of Polycrystalline Metals
                             </Typography>
                             <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
-                                <Typography gutterBottom variant='h6' component="div">
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
                                     Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
                                 </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid id="microstructures" item xs={2} sm={4} md={6}>
-                        <Card>
-                            <Typography variant='h4' gutterBottom sx={{padding: "1rem"}}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Microstructure-Based Modeling of Polycrystalline Metals
                             </Typography>
                             <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
-                                <Typography gutterBottom variant='h6' component="div">
-                                    Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid id="microstructures" item xs={2} sm={4} md={6}>
-                        <Card>
-                            <Typography variant='h4' gutterBottom sx={{padding: "1rem"}}>
-                                Microstructure-Based Modeling of Polycrystalline Metals
-                            </Typography>
-                            <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
-                            <CardContent>
-                                <Typography gutterBottom variant='h6' component="div">
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
                                     Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
                                 </Typography>
                             </CardContent>
