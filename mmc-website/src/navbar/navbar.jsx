@@ -8,20 +8,20 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Home} from '@mui/icons-material';
+import { Work } from '@mui/icons-material';
+import { Group } from '@mui/icons-material';
+import { Phone } from '@mui/icons-material';
+import { useMediaQuery, useTheme } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 // User Defined Modules
 import useStyles from '../utils/styles';
-import { Work } from '@mui/icons-material';
-import { Group } from '@mui/icons-material';
-import { Phone } from '@mui/icons-material';
-import { useMediaQuery, useTheme } from '@mui/material';
+import NavbarButtonDrawer from '../Components/styledButtons';
+import NavbarButton from '../Components/styledButtons';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Clients', 'About', 'Contact'];
@@ -52,16 +52,16 @@ function Navbar(props) {
       <Divider />
       <List sx={{display: "flex", flexDirection: "column"}}>
         <ListItem>
-            <Button id='homeBtnDrawer' variant='contained' startIcon={<Home />} sx={{backgroundColor: "white", color: "black", fontFamily: "Cabin"}} href='/'>Home</Button>
+            <NavbarButtonDrawer props={{text: "Home", href: "/", startIcon: <Home />, id: "homeBtnDrawer"}}></NavbarButtonDrawer>
         </ListItem>
         <ListItem>
-            <Button id='clientsBtnDrawer' variant='contained' startIcon={<Work />} sx={{backgroundColor: "white", color: "black", fontFamily: "Cabin"}} href='/clients'>Clients</Button>
+            <NavbarButtonDrawer props={{text: "Clients", href: "/clients", startIcon: <Work />, id: "clientsBtnDrawer"}}></NavbarButtonDrawer>
         </ListItem>
         <ListItem>
-            <Button id='aboutBtnDrawer' variant='contained' startIcon={<Group />} sx={{backgroundColor: "white", color: "black", fontFamily: "Cabin"}} href='/about'>About Us</Button>
+            <NavbarButtonDrawer props={{text: "About Us", href: "/about", startIcon: <Group />, id: "aboutBtnDrawer"}}></NavbarButtonDrawer>
         </ListItem>
         <ListItem>
-            <Button id='contactBtnDrawer' variant='contained' startIcon={<Phone />} sx={{backgroundColor: "white", color: "black", fontFamily: "Cabin"}} href='/contact'>Contact Us</Button>
+            <NavbarButtonDrawer props={{text: "Contact Us", href: "/contact", startIcon: <Phone />, id: "contactBtnDrawer"}}></NavbarButtonDrawer>
         </ListItem>
       </List>
     </Box>
@@ -100,10 +100,10 @@ function Navbar(props) {
             MM<span className={classes.consulting}>C</span>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button id='homeBtn' variant='contained' size={useMediaQuery(theme.breakpoints.down("md")) ? "small" : "medium"} startIcon={<Home />} sx={{backgroundColor: "#efefef", color: "black", marginRight: "10px"}} href='/'>Home</Button>
-            <Button id='clientsBtn' variant='contained' size={useMediaQuery(theme.breakpoints.down("md")) ? "small" : "medium"} startIcon={<Work />} sx={{backgroundColor: "#efefef", color: "black", marginRight: "10px"}} href='/clients'>Clients</Button>
-            <Button id='aboutBtn' variant='contained' size={useMediaQuery(theme.breakpoints.down("md")) ? "small" : "medium"} startIcon={<Group />} sx={{backgroundColor: "#efefef", color: "black", marginRight: "10px"}} href='/about'>About Us</Button>
-            <Button id='contactBtn' variant='contained' size={useMediaQuery(theme.breakpoints.down("md")) ? "small" : "medium"} startIcon={<Phone />} sx={{backgroundColor: "#efefef", color: "black"}} href='/contact'>Contact Us</Button>
+            <NavbarButton props={{text: "Home", href: "/", startIcon: <Home />, id: "homeBtn"}}></NavbarButton>
+            <NavbarButton props={{text: "Clients", href: "/clients", startIcon: <Work />, id: "clientsBtn"}}></NavbarButton>
+            <NavbarButton props={{text: "About Us", href: "/about", startIcon: <Group />, id: "aboutBtn"}}></NavbarButton>
+            <NavbarButton props={{text: "Contact Us", href: "/contact", startIcon: <Phone />, id: "contactBtn"}}></NavbarButton>
           </Box>
         </Toolbar>
       </AppBar>
