@@ -31,27 +31,27 @@ function HomePage() {
                                 </a>
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="#test" style={{textDecoration: "none"}}>
+                                <a href="#tubeHydroforming" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/forging.png", alt: "image of forging problems solved by MMC", text: "Forging"}} />
                                 </a>                            
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="/" style={{textDecoration: "none"}}>
+                                <a href="#incrementalForming" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/incrementalForming.png", alt: "image of incremental forming problems solved by MMC", text: "Incremental Forming"}} />
                                 </a>                            
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="/" style={{textDecoration: "none"}}>
+                                <a href="#ahssCharacterization" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/laserMeltingPowderBed.png", alt: "image of laser melting powder bed solved by MMC", text: "Laser Melting Powder Bed"}} />
                                 </a>
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="/" style={{textDecoration: "none"}}>
+                                <a href="#rollingMaterialCharacterization" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/rolling.png", alt: "image of 3d Rolling problems solved by MMC", text: "Rolling"}} />
                                 </a>
                             </Grid>
                             <Grid item xs={8} sm={6} md={4} >
-                                <a href="/" style={{textDecoration: "none"}}>
+                                <a href="#stamping" style={{textDecoration: "none"}}>
                                     <ProblemTile props={{imgSrc: "../images/stamping.png", alt: "image of stamping solved by MMC", text: "Stamping"}} />
                                 </a>
                             </Grid>
@@ -59,30 +59,17 @@ function HomePage() {
                     </Grid>
                 </Grid>
             </Container>
-            <Container maxWidth="lg" sx={{marginTop: "5rem", padding: "5rem", borderTop: "2px dotted #d32f2f"}}>
+            <Container maxWidth="lg" sx={{marginTop: "5rem", padding: "5rem"}}>
                 <Grid container spacing={16} direction="column" justifyContent="center" alignItems="center">
-                    <Grid id="microstructures" item xs={2} sm={4} md={6}>
+                    <Grid id="tubeHydroforming" item xs={2} sm={4} md={6}>
                         <Card sx={{maxWidth: 800}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
-                                3D Printing polymer based shells
+                                Tube Hydroforming Process 
                             </Typography>
-                            <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
+                            <CardMedia component='img' image='../images/tube-hydroforming-process.PNG' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
                                 <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
-                                    Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid id="test" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
-                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
-                                Microstructure-Based Modeling of Polycrystalline Metals
-                            </Typography>
-                            <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
-                            <CardContent>
-                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
-                                    Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
+                                    Tube hydroforming is a popular manufacturing process to make structural components for automotive and aerospace applications. Tubes made with the extrusion process and welding of rolled sheet metals are often heat treated to obtain the desired mechanical properties before and after the forming process.
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -100,15 +87,53 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid id="microstructures" item xs={2} sm={4} md={6}>
+                    <Grid id="stamping" item xs={2} sm={4} md={6}>
                         <Card sx={{maxWidth: 800}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
-                                Microstructure-Based Modeling of Polycrystalline Metals
-                            </Typography>
-                            <CardMedia component='img' image='../images/microstructures.png' alt='image of microstructures problem solved by mmc' />
+                                Stamping of Third-Gen Phase-Transforming AHSS                             </Typography>
+                            <CardMedia component='img' image='../images/stamping-third-gen.PNG' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
                                 <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
-                                    Due to the evolution of texture (anisotropy), we use crystal plasticity models to predict the mechanical properties of metal sheets and tubes in metal forming processes. 
+                                    Due to the complex mechanical behavior of phase transforming advanced high strength steel (AHSS), we employed a microstructure-based crystal plasticity model to predict the deformation of this material during stamping. A microstructure-based forming limit curve (FLC) was also employed to predict the failure of the AHSS sheet. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid id="ahssCharacterization" item xs={2} sm={4} md={6}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Characterization of Third-Gen Phase-Transforming AHSS
+                            </Typography>
+                            <CardMedia component='img' image='../images/characterization-third-gen.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Due to the complex mechanical behavior of phase transforming advanced high strength steel (AHSS), we employed a microstructure-based crystal plasticity model to predict the deformation of this material during stamping. A microstructure-based forming limit curve (FLC) was also employed to predict the failure of the AHSS sheet. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid id="rollingMaterialCharacterization" item xs={2} sm={4} md={6}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Material Characterization 
+                            </Typography>
+                            <CardMedia component='img' image='../images/rollingMaterialCharacterization.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Measured data from uniaxial and biaxial tests are used to characterize the mechanical properties of sheet and tubular metals and furthermore used to calibrate parameters of phenomenological yield functions. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid id="incrementalForming" item xs={2} sm={4} md={6}>
+                        <Card sx={{maxWidth: 800}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Incremental Sheet Forming  
+                            </Typography>
+                            <CardMedia component='img' image='../images/incrementSheetForming.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Incremental Sheet Forming (ISF) is a novel flexible manufacturing method for rapid prototyping and small batch production of sheet metal components. FE modeling of the truncated-conical geometries with 45^° and 67^°wall angles from a circular shape sheet metal with 100 mm radius and 1.64 mm thickness was conducted. The Yld2004-18p and Hill's 1948 models, implemented as a VUMAT into ABAQUS, were applied.
                                 </Typography>
                             </CardContent>
                         </Card>
