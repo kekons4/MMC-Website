@@ -20,44 +20,47 @@ function HomePage() {
                     </Grid>
                     <Grid item xs={8} sm={9} md={6} sx={{marginLeft: "4rem", backgroundColor: "white", height: "50%", padding: "1rem", borderRadius: "5px", marginTop: {xs: "2rem", sm: "2rem", md: "0rem"}}}>
                         <img src="../images/dr-pourboghrat-hero-img.jpg" alt="image of materials and manufactoring work examples" style={{width: "100%", height: "auto", borderRadius: "5px"}} />
-                        <Typography variant='p'>Dr. Pourboghrat chatting with Collegues</Typography>
+                        <Typography variant='p'>Dr. Pourboghrat chatting with Colleagues</Typography>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={12} sx={{backgroundColor: "white", borderRadius: "5px", padding: "20px", marginTop: "2rem"}}>
-                        <Typography variant='h4' align='center' color="black" sx={{marginBottom: "40px", fontFamily: "Cabin"}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
-                        <Grid container spacing={1}>
-                            <Grid item xs={8} sm={6} md={4}>
-                                <a href="#microstructures" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/3dprint.png", alt: "image of 3d printing problems solved by MMC", text: "3D Printing"}} />
-                                </a>
-                            </Grid>
-                            <Grid item xs={8} sm={6} md={4} >
-                                <a href="#tubeHydroforming" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/forging.png", alt: "image of forging problems solved by MMC", text: "Forging"}} />
-                                </a>                            
-                            </Grid>
-                            <Grid item xs={8} sm={6} md={4} >
-                                <a href="#incrementalForming" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/incrementalForming.png", alt: "image of incremental forming problems solved by MMC", text: "Incremental Forming"}} />
-                                </a>                            
-                            </Grid>
-                            <Grid item xs={8} sm={6} md={4} >
-                                <a href="#ahssCharacterization" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/laserMeltingPowderBed.png", alt: "image of laser melting powder bed solved by MMC", text: "Laser Melting Powder Bed"}} />
-                                </a>
-                            </Grid>
-                            <Grid item xs={8} sm={6} md={4} >
-                                <a href="#rollingMaterialCharacterization" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/rolling.png", alt: "image of 3d Rolling problems solved by MMC", text: "Rolling"}} />
-                                </a>
-                            </Grid>
-                            <Grid item xs={8} sm={6} md={4} >
-                                <a href="#stamping" style={{textDecoration: "none"}}>
-                                    <ProblemTile props={{imgSrc: "../images/stamping.png", alt: "image of stamping solved by MMC", text: "Stamping"}} />
-                                </a>
-                            </Grid>
+                    
+                </Grid>
+            </Container>
+            <Container maxWidth="2xl">
+                <Box xs={12} sm={12} md={12} sx={{borderRadius: "5px", paddingTop: "100px", paddingBottom: "100px", marginTop: "10rem"}}>
+                    <Typography variant='h2' align='center' color="black" sx={{marginBottom: "40px", fontFamily: "Cabin"}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
+                    <Grid container spacing={2} sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        <Grid item xs={8} sm={6} md={6}>
+                            <a href="#microstructures" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/3dprinting.png", alt: "image of 3d printing problems solved by MMC", text: "3D Printing"}} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={6} >
+                            <a href="#tubeHydroforming" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/forging2.jpg", alt: "image of forging problems solved by MMC", text: "Forging"}} />
+                            </a>                            
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={6} >
+                            <a href="#incrementalForming" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/incrementalForming.png", alt: "image of incremental forming problems solved by MMC", text: "Incremental Forming"}} />
+                            </a>                            
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={6} >
+                            <a href="#ahssCharacterization" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/laserMeltingPowderBed.png", alt: "image of laser melting powder bed solved by MMC", text: "Laser Powder Bed"}} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={6} >
+                            <a href="#rollingMaterialCharacterization" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/rolling.png", alt: "image of 3d Rolling problems solved by MMC", text: "Rolling"}} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={6} >
+                            <a href="#stamping" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/stamping.png", alt: "image of stamping solved by MMC", text: "Stamping"}} />
+                            </a>
                         </Grid>
                     </Grid>
-                </Grid>
+                </Box>
             </Container>
             <Container maxWidth="lg" sx={{marginTop: "5rem", padding: "5rem"}}>
                 <Grid container spacing={16} direction="column" justifyContent="center" alignItems="center">

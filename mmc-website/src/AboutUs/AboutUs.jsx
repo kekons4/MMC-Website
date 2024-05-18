@@ -14,7 +14,7 @@ function AboutUs() {
                 <Grid item>
                     <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
                         <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
-                            <CardMedia component="img" image='../images/fpour.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{borderRight: "1px black solid", maxWidth: {xs: 400, sm: 200, md: 200}}} />
+                            <CardMedia component="img" image='../images/fpour.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
                             <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>
                                 <Typography variant='h4' component="div" sx={{marginBottom: "15px"}}>
                                     Dr. Farhang Pourboghrat
@@ -40,7 +40,7 @@ function AboutUs() {
                 <Grid item>
                     <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
                         <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
-                            <CardMedia component="img" image='../images/taejoon.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{borderRight: "1px black solid", maxWidth: {xs: 400, sm: 200, md: 200}}} />
+                            <CardMedia component="img" image='../images/taejoon.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
                             <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>
                                 <Typography variant='h4' component="div" sx={{marginBottom: "15px"}}>
                                     Dr. Taejoon Park
@@ -60,23 +60,25 @@ function AboutUs() {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "row"}, border: "1px black solid", maxWidth: {xs: 300, sm: 500, md: 1000}}}>
-                        <CardMedia component="img" image='../images/madhura.jpg' alt='picture of Dr. Madhura Athale' sx={{borderRight: "1px black solid", height: "auto"}} />
-                        <Box sx={{display: "flex", flexDirection: "column"}}>
-                            <CardContent>
-                                <Typography variant='h5' component="div">
+                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
+                        <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
+                            <CardMedia component="img" image='../images/madhura.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
+                            <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>
+                                <Typography variant='h4' component="div" sx={{marginBottom: "15px"}}>
                                     Dr. Madhura Athale
                                 </Typography>
-                                <Typography variant='subtitle1' component="div">Associate Consultant at Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
-                                <Typography variant='subtitle2' component="div">
+                                <Typography variant='h6' component="div">
+                                    Associate Consultant at Materials and Manufactoring <span className={classes.consulting}>Consulting</span>
+                                </Typography>
+                                <Typography variant='subtitle1' component="div">
                                     PhD in Mechanical Engineering from the University of The Ohio State University
                                 </Typography>
                             </CardContent>
-                            <Box sx={{overflow: "scroll", maxHeight: 200}}>
-                                <Typography variant='p' component="div" sx={{paddingBottom: "1rem", paddingRight: "1rem", paddingLeft: "1rem"}}>
-                                    Dr. Madhura Athale has 5+ years of experience in Material Characterization & Modeling and Finite Element Analysis, and proficient in Data Acquisition and Processing. Her experiences includes designing polymer tooling through virtual experimentation using Finite Element Analysis (FEA) on ABAQUS to optimize cost and performance; performing FEA of the stamping process for prediction of polymer tool performance and tool life assessment; developing micromechanical model of 3D printed polymer composites for prediction of macroscopic material properties by performing FEA on Representative Volume Elements (RVEs) to identify the structure-property relationships.
-                                </Typography>
-                            </Box>
+                        </Box>
+                        <Box sx={{overflow: "scroll", maxHeight: 200, padding: "5px"}}>
+                            <Typography variant='p' component="div" sx={{paddingBottom: "1rem", paddingRight: "1rem", paddingLeft: "1rem"}}>
+                                Dr. Madhura Athale has 5+ years of experience in Material Characterization & Modeling and Finite Element Analysis, and proficient in Data Acquisition and Processing. Her experiences includes designing polymer tooling through virtual experimentation using Finite Element Analysis (FEA) on ABAQUS to optimize cost and performance; performing FEA of the stamping process for prediction of polymer tool performance and tool life assessment; developing micromechanical model of 3D printed polymer composites for prediction of macroscopic material properties by performing FEA on Representative Volume Elements (RVEs) to identify the structure-property relationships.
+                            </Typography>
                         </Box>
                     </Card>
                 </Grid>
