@@ -1,4 +1,5 @@
-import {Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container, Button, ButtonGroup, createTheme, Box} from '@mui/material';
+import {Typography, Card, CardContent, CardMedia, Grid, Box} from '@mui/material';
+import {LinkedIn} from '@mui/icons-material';
 
 // User Defined modules
 import useStyles from '../utils/styles';
@@ -28,6 +29,9 @@ function AboutUs() {
                                 <Typography variant='subtitle1' component="div">
                                     Chairman of The Ohio State University ISE Engineering Department
                                 </Typography>
+                                <Typography variant='subtitle1' component="div">
+                                    <a href='https://www.linkedin.com/in/farhang-pourboghrat-9a50515a/' target='_blank'><LinkedIn sx={{fontSize: "3rem", color: "#0072b1"}} /></a>
+                                </Typography>
                             </CardContent>
                         </Box>
                         <Box sx={{overflow: "scroll", maxHeight: 200, padding: "5px"}}>
@@ -49,6 +53,9 @@ function AboutUs() {
                                     Associate Consultant at Materials and Manufactoring <span className={classes.consulting}>Consulting</span>                                </Typography>
                                 <Typography variant='subtitle1' component="div">
                                     PhD in Mechanical Engineering from the University of Seoul                                
+                                </Typography>
+                                <Typography variant='subtitle1' component="div">
+                                    <a href='https://www.linkedin.com/in/taejoon-park-67b232290/' target='_blank'><LinkedIn sx={{fontSize: "3rem", color: "#0072b1"}} /></a>
                                 </Typography>
                             </CardContent>
                         </Box>
@@ -72,6 +79,9 @@ function AboutUs() {
                                 </Typography>
                                 <Typography variant='subtitle1' component="div">
                                     PhD in Mechanical Engineering from the University of The Ohio State University
+                                </Typography>
+                                <Typography variant='subtitle1' component="div">
+                                    <a href='https://www.linkedin.com/in/madhuraathale/' target='_blank'><LinkedIn sx={{fontSize: "3rem", color: "#0072b1"}} /></a>
                                 </Typography>
                             </CardContent>
                         </Box>
