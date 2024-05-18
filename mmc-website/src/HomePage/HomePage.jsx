@@ -9,7 +9,7 @@ function HomePage() {
 
     return (
         <main className={classes.container}>
-            <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, marginBottom: "75px", fontSize: { xs: '40px', sm: '50px', md: '60px'}, fontFamily: "Cabin"}} gutterBottom>Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
+            <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, marginBottom: "75px", fontSize: { xs: '40px', sm: '50px', md: '70px'}, fontFamily: "Cabin"}} gutterBottom>Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
             <Container maxWidth="lg">
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12} md={5} sx={{backgroundColor: "white", borderRadius: "5px", padding: "20px"}}>
@@ -27,7 +27,7 @@ function HomePage() {
             </Container>
             <Container maxWidth="2xl">
                 <Box xs={12} sm={12} md={12} sx={{borderRadius: "5px", paddingTop: "100px", paddingBottom: "100px", marginTop: "10rem"}}>
-                    <Typography variant='h2' align='center' color="black" sx={{marginBottom: "40px", fontFamily: "Cabin"}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
+                    <Typography variant='h1' align='center' color="black" sx={{marginBottom: "100px", fontFamily: "Cabin"}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
                     <Grid container spacing={2} sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
                         <Grid item xs={8} sm={6} md={6}>
                             <a href="#microstructures" style={{textDecoration: "none"}}>
