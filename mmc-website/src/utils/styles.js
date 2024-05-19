@@ -1,5 +1,4 @@
 import { makeStyles } from "@mui/styles";
-import { blueGrey } from "@mui/material/colors";
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -14,6 +13,17 @@ const useStyles = makeStyles((theme) => ({
         color: "#d32f2f",
         fontWeight: "400",
         fontFamily: "Cabin"
+    },
+    heroCaption: {
+        fontWeight: "400",
+        fontSize: {
+            xs: "0.3rem",
+            sm: "1rem",
+            md: "1.2rem"
+        },
+        marginTop: "5px",
+        marginBottom: "5px",
+        width: "100%"
     },
     icon: {
         marginRight: '20px'

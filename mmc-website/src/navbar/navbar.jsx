@@ -13,10 +13,9 @@ import {Home} from '@mui/icons-material';
 import { Work } from '@mui/icons-material';
 import { Group } from '@mui/icons-material';
 import { Phone } from '@mui/icons-material';
-import { useMediaQuery, useTheme } from '@mui/material';
+import { useTheme } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 // User Defined Modules
 import useStyles from '../utils/styles';
@@ -24,7 +23,6 @@ import NavbarButtonDrawer from '../Components/styledButtons';
 import NavbarButton from '../Components/styledButtons';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Clients', 'About', 'Contact'];
 
 function Navbar(props) {
   const theme = useTheme();
