@@ -3,13 +3,15 @@ import {Typography, Card, CardContent, CardMedia, Grid, Container, Box} from '@m
 // User Defined modules
 import useStyles from '../utils/styles';
 import ProblemTile from '../Components/problemsTile';
+import HomePageContentsPanel from '../Components/homePageContentsPanel';
 
 function HomePage() {
     const classes = useStyles();
 
     return (
         <main className={classes.container}>
-            <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, marginBottom: "75px", fontSize: { xs: '40px', sm: '50px', md: '70px'}, fontFamily: "Cabin"}} gutterBottom>Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
+            <HomePageContentsPanel />
+            <Typography id='mission' variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, marginBottom: "75px", marginLeft: {xs: "10px", sm: "10px", md: "10px"}, marginRight: {xs: "10px", sm: "10px", md: "10px"}, fontSize: { xs: '40px', sm: '50px', md: '70px'}, fontFamily: "Cabin"}} gutterBottom>Materials and Manufactoring <span className={classes.consulting}>Consulting</span></Typography>
             <Container maxWidth="xl">
                 <Grid container spacing={2} sx={{display: 'flex', alignItems: "start", justifyContent: "center"}}>
                     <Grid item xs={12} sm={12} md={5} sx={{backgroundColor: "white", borderRadius: "5px", padding: "20px"}}>
@@ -23,7 +25,7 @@ function HomePage() {
                         <Typography variant='p'>Dr. Pourboghrat chatting with Colleagues</Typography>
                     </Grid>
                     <Grid item xs={9} sm={9} md={7.2} sx={{ backgroundColor: "white", height: "50%", padding: "0rem", borderRadius: "5px", marginTop: {xs: "2rem", sm: "2rem", md: "4rem"}, display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <video controls autoPlay style={{width: "100%", maxHeight: "100%", paddingRight: "10px"}}>
+                        <video controls style={{width: "100%", maxHeight: "100%", paddingRight: "10px"}}>
                             <source src="../videos/hero-video.mp4" type="video/mp4" />
                         </video>
                         <Typography variant='p' className={classes.heroCaption}>Dr. Pourboghrat explains the <a href='#stamping' className={classes.consulting}>Stamping</a> process</Typography>
@@ -31,35 +33,35 @@ function HomePage() {
                 </Grid>
             </Container>
             <Container maxWidth="2xl">
-                <Box xs={12} sm={12} md={12} sx={{borderRadius: "5px", paddingTop: "100px", paddingBottom: "100px", marginTop: "10rem"}}>
-                    <Typography variant='h1' align='center' color="black" sx={{marginBottom: "100px", fontFamily: "Cabin"}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
+                <Box id='typeofproblems' xs={12} sm={12} md={12} sx={{borderRadius: "5px", paddingTop: "100px", paddingBottom: "100px", marginTop: "10rem"}}>
+                    <Typography variant='h1' align='center' color="black" sx={{marginBottom: "100px", fontFamily: "Cabin", fontSize: {xs: "70px", sm: "80px", md: "100px"}}}>Types of Problems Solved by MM<span className={classes.consulting}>C</span></Typography>
                     <Grid container spacing={2} sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                        <Grid item xs={8} sm={6} md={6}>
+                        <Grid item xs={8} sm={6} md={4}>
                             <a href="#microstructures" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/3dprinting.png", alt: "image of 3d printing problems solved by MMC", text: "3D Printing"}} />
                             </a>
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} >
+                        <Grid item xs={8} sm={6} md={4} >
                             <a href="#tubeHydroforming" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/forging2.jpg", alt: "image of forging problems solved by MMC", text: "Forging"}} />
                             </a>                            
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} >
+                        <Grid item xs={8} sm={6} md={4} >
                             <a href="#incrementalForming" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/incrementalForming.png", alt: "image of incremental forming problems solved by MMC", text: "Incremental Forming"}} />
                             </a>                            
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} >
+                        <Grid item xs={8} sm={6} md={4} >
                             <a href="#ahssCharacterization" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/laserMeltingPowderBed.png", alt: "image of laser melting powder bed solved by MMC", text: "Laser Powder Bed"}} />
                             </a>
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} >
+                        <Grid item xs={8} sm={6} md={4} >
                             <a href="#rollingMaterialCharacterization" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/rolling.png", alt: "image of 3d Rolling problems solved by MMC", text: "Rolling"}} />
                             </a>
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} >
+                        <Grid item xs={8} sm={6} md={4} >
                             <a href="#stamping" style={{textDecoration: "none"}}>
                                 <ProblemTile props={{imgSrc: "../images/stamping.png", alt: "image of stamping solved by MMC", text: "Stamping"}} />
                             </a>
@@ -67,10 +69,13 @@ function HomePage() {
                     </Grid>
                 </Box>
             </Container>
-            <Container maxWidth="lg" sx={{marginTop: "5rem", padding: "5rem"}}>
-                <Grid container spacing={16} direction="column" justifyContent="center" alignItems="center">
+            <Container id='examplesOfProblemsSolved' maxWidth="2xl" sx={{marginTop: "5rem", marginBottom: "10rem", padding: "5rem", backgroundColor: "white"}}>
+                <Typography variant='h2' component="div" align='center' sx={{fontFamily: "Cabin", marginBottom: "100px"}}>
+                    Examples of Problems <span className={classes.consulting}>Solved</span>
+                </Typography>
+                <Grid container spacing={0} direction="column" justifyContent="center" alignItems="center">
                     <Grid id="tubeHydroforming" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Tube Hydroforming Process 
                             </Typography>
@@ -82,8 +87,11 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
                     <Grid id="microstructures" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Microstructure-Based Modeling of Polycrystalline Metals
                             </Typography>
@@ -95,8 +103,11 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
                     <Grid id="stamping" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Stamping of Third-Gen Phase-Transforming AHSS                             </Typography>
                             <CardMedia component='img' image='../images/stamping-third-gen.PNG' alt='image of microstructures problem solved by mmc' />
@@ -107,8 +118,11 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
                     <Grid id="ahssCharacterization" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Characterization of Third-Gen Phase-Transforming AHSS
                             </Typography>
@@ -120,8 +134,11 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
                     <Grid id="rollingMaterialCharacterization" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Material Characterization 
                             </Typography>
@@ -133,14 +150,17 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid id="incrementalForming" item xs={2} sm={4} md={6}>
-                        <Card sx={{maxWidth: 800}}>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
+                    <Grid id="incrementalForming" item xs={2} sm={4} md={6} >
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
                                 Incremental Sheet Forming  
                             </Typography>
                             <CardMedia component='img' image='../images/incrementSheetForming.PNG' alt='image of microstructures problem solved by mmc' />
                             <CardContent>
-                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.25rem", sm: "0.5rem", md: "1rem"}}} >
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
                                     Incremental Sheet Forming (ISF) is a novel flexible manufacturing method for rapid prototyping and small batch production of sheet metal components. FE modeling of the truncated-conical geometries with 45^° and 67^°wall angles from a circular shape sheet metal with 100 mm radius and 1.64 mm thickness was conducted. The Yld2004-18p and Hill's 1948 models, implemented as a VUMAT into ABAQUS, were applied.
                                 </Typography>
                             </CardContent>

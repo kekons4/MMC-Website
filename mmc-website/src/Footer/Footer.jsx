@@ -16,7 +16,7 @@ function Footer() {
 
     return (
         <footer className={classes.footer}>
-          <Typography variant="h6" align="center" gutterBottom>
+          <Typography variant="h6" align="center" gutterBottom className={classes.footerText}>
               &copy; {currentYear} Materials and Manufactoring <span className={classes.consulting}>Consulting</span> L.L.C.
           </Typography>
           {/* <Typography variant='h6' align='center' sx={{fontSize: "14px"}} gutterBottom>

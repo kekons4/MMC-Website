@@ -1,4 +1,6 @@
 import { makeStyles } from "@mui/styles";
+import HomePageContentsPanel from "../Components/homePageContentsPanel";
+import { BorderRight } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -25,28 +27,36 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "5px",
         width: "100%"
     },
-    icon: {
-        marginRight: '20px'
-    },
-    button: {
-        marginTop: '40px'
-    },
-    cardGrid: {
-        padding: '20px 0'
-    },
-    card: {
-        height: '100%',
+    HomePageContentsPanel: {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        justifyContent: "center",
+        alignItems: "center",
+        color: '#d32f2f',
+        // border: "1px black solid",
+        position: "fixed"
     },
-    cardMedia: {
-        paddingTop: '56.25%' // 16:9 image
+    HomePageContentsPanelTitle: {
+        padding: "0px",
+        margin: "0px"
     },
-    cardContent: {
-        flexGrow: 1
+    HomePageContentsPanelList: {
+        listStyleType: "none",
+        borderLeft: "1px #d32f2f solid",
+        padding: "5px",
+        marginLeft: "3rem"
+    },
+    HomePageContentsPanelText: {
+        color: '#d32f2f',
+        textDecoration: "none",
+        // padding: "5px",
+        '&:hover': {
+            textDecoration: "underline",
+            color: "red"
+        }
     },
     footer: {
-        backgroundColor: "white",
+        backgroundColor: "#607d8b",
         padding: "50px 0"
     }
 }));
