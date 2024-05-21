@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "400",
         fontFamily: "Cabin"
     },
+    cabinFont: {
+        fontFamily: "Cabin"
+    },
     heroCaption: {
         fontWeight: "400",
         fontSize: {

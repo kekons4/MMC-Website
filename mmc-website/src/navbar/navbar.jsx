@@ -93,7 +93,7 @@ function Navbar(props) {
           <Typography
             variant="h3"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, letterSpacing: "5px", fontWeight: "400", color: "black" }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, letterSpacing: "5px", fontWeight: "600", color: "black", fontFamily: "Cabin" }}
           >
             MM<span className={classes.consulting}>C</span>
           </Typography>
