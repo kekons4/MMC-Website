@@ -13,7 +13,7 @@ function AboutUs() {
             {/* <Container maxWidth="lg"> */}
             <Grid container rowSpacing={4} sx={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                 <Grid item>
-                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
+                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "2px 2px 15px -3px black", maxWidth: {xs: 400, sm: 550, md: 900}}}>
                         <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
                             <CardMedia component="img" image='../images/fpour.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
                             <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>
@@ -42,9 +42,9 @@ function AboutUs() {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
+                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "2px 2px 15px -3px black", maxWidth: {xs: 400, sm: 550, md: 900}}}>
                         <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
-                            <CardMedia component="img" image='../images/taejoon.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
+                            <CardMedia component="img" image='../images/taejoon.jpg' alt='picture of Dr. Taejoon Park' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
                             <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>
                                 <Typography variant='h4' component="div" sx={{marginBottom: "15px"}}>
                                     Dr. Taejoon Park
@@ -67,7 +67,7 @@ function AboutUs() {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "1px 1px 5px 1px", maxWidth: {xs: 400, sm: 550, md: 900}}}>
+                    <Card sx={{display: "flex", flexDirection: {xs: "column", sm: "column", md: "column"}, boxShadow: "2px 2px 15px -3px black", maxWidth: {xs: 400, sm: 550, md: 900}}}>
                         <Box sx={{display: "flex", flexDirection: {xs: "column", sm: "row", md: "row"}}}>
                             <CardMedia component="img" image='../images/madhura.jpg' alt='picture of Dr. Farhang Pourboghrat' sx={{maxWidth: {xs: 400, sm: 200, md: 200}}} />
                             <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: "center"}}>

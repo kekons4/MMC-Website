@@ -21,12 +21,12 @@ function ContactUs() {
 
     return (
         <Container maxWidth="2xl" sx={{backgroundColor: "#efefef", marginTop: "2rem", padding: "4rem", display: "flex", flexDirection: "column", alignItems: "center"}}>
-            <FormControl variant="standard" sx={{borderRadius: "10px", padding: "30px", backgroundColor: "white", display: "flex", flexDirection: "column", gap: "20px", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
+            <FormControl variant="standard" sx={{borderRadius: "10px", padding: "30px", backgroundColor: "white", display: "flex", flexDirection: "column", gap: "20px", boxShadow: "2px 2px 15px -3px black"}}>
                 <Typography variant="h2" component="div" align="center" sx={{fontFamily: "Cabin"}}>
                     Contact <span className={classes.consulting}>Us</span>
                 </Typography>
                 <Typography variant="p" component="div" align="center" sx={{fontFamily: "Cabin", fontSize: {xs: "12px", sm: "15px", md: "20px"}}}>
-                    If you have and business query please contact us entering your information in the form below. 
+                    If you have and business queries please contact us by entering your information in the form below. 
                 </Typography>
                 
                 <TextField 

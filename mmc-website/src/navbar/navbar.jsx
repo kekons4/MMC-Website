@@ -43,8 +43,8 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: "#efefef", height: "100%"}}>
-      <Typography variant="h4" sx={{ my: 2, letterSpacing: "2px", fontWeight: "500", fontFamily: "Cabin" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: "#2D3E4E", height: "100%"}}>
+      <Typography variant="h4" sx={{ my: 2, letterSpacing: "2px", fontWeight: "500", fontFamily: "Cabin", color: "#E8ECEB" }}>
         MM<span className={classes.consulting}>C</span>
       </Typography>
       <Divider />
@@ -79,7 +79,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{backgroundColor: "#607d8b"}}>
+      <AppBar component="nav" sx={{backgroundColor: "#2D3E4E"}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -93,7 +93,7 @@ function Navbar(props) {
           <Typography
             variant="h3"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, letterSpacing: "5px", fontWeight: "600", color: "black", fontFamily: "Cabin" }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'block' }, flexDirection: "row", alignItems: "center", justifyContent: "center", letterSpacing: "5px", fontWeight: "600", color: "E8ECEB", fontFamily: "Cabin" }}
           >
             MM<span className={classes.consulting}>C</span>
           </Typography>

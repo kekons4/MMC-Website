@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     consulting: {
         color: "#d32f2f",
-        fontWeight: "400",
+        fontWeight: "500",
         fontFamily: "Cabin"
     },
     cabinFont: {
@@ -59,8 +59,11 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     footer: {
-        backgroundColor: "#607d8b",
+        backgroundColor: "#2D3E4E",
         padding: "50px 0"
+    },
+    footerText: {
+        color: "#E8ECEB"
     }
 }));
 
