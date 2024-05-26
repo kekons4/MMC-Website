@@ -91,7 +91,9 @@ function ContactUs() {
                     variant="outlined" 
                     rows={6}
                     />
-                <Button endIcon={<SendIcon />} variant="outlined" sx={{color: "#d32f2f", border: "1px #d32f2f solid", "&:hover": {color: "red", border: "1px red solid", backgroundColor: "#efefef", fontWeight: "900"}}}>Send</Button>
+                <div>
+                    <Button endIcon={<SendIcon />} variant="outlined" sx={{fontSize: "16px", color: "#d32f2f", border: "1px #d32f2f solid", "&:hover": {color: "red", border: "1px red solid", fontWeight: "900"}, padding: "10px"}}>Send</Button>
+                </div>
             </FormControl>
         </Container>
     );
