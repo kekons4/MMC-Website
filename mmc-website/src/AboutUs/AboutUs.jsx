@@ -9,7 +9,10 @@ function AboutUs() {
 
     return(
         <main className={classes.container}>
-            <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, marginBottom: "75px", fontFamily: "Cabin"}} gutterBottom>Our <span className={classes.consulting}>Team</span></Typography>
+            <Typography variant='h2' align='center' color="textPrimary" sx={{fontWeight: 400, fontFamily: "Cabin"}} gutterBottom>Our <span className={classes.consulting}>Team</span></Typography>
+            <Typography variant='p' align='center' component="div" sx={{fontWeight: 400, marginBottom: "75px", fontFamily: "Cabin"}}>
+                Our team comprises of leading industry expertise across many domains of engineering and material sciences.
+            </Typography>
             {/* <Container maxWidth="lg"> */}
             <Grid container rowSpacing={4} sx={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                 <Grid item>
