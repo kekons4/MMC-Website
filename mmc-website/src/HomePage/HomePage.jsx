@@ -82,6 +82,11 @@ function HomePage() {
                                 <ProblemTile props={{imgSrc: "../images/springback.jpg", alt: "image of springback solved by MMC", text: "Springback"}} />
                             </a>
                         </Grid>
+                        <Grid item xs={8} sm={6} md={4} >
+                            <a href="#fiberAndNanoReinforcedPolymerComposite" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/fiberAndNanoReinforcedPolymerComposite.jpg", alt: "image of Fiber And Nano Reinforced Polymer Composite solved by MMC", text: "Nano Reinforced Polymer Composite"}} />
+                            </a>
+                        </Grid>
                     </Grid>
                 </Box>
             </Container>
@@ -396,24 +401,87 @@ function HomePage() {
                             </CardContent>
                         </Card>
                     </Grid>
+                    
                     <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
-                    <Grid id="srpringback" item xs={2} sm={4} md={6} >
+                    <Grid id="springback" item xs={2} sm={4} md={6} >
                         <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Springback
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
                             <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
-                            Friction Stir Extrusion pt.1 
+                                Springback in Stamped Sheet Metals  
                             </Typography>
-                            <CardMedia component='img' image='../images/frictionStirExtrusion1.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardMedia component='img' image='../images/springback1.png' alt='image of springback problem solved by mmc' />
                             <CardContent>
                                 <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
-                                    FSE uses relative motion and high contact forces between a non-consumable tool set and a metallic workpiece to generate frictional heating and severe plastic deformation. The result is a metal with fine grain size, low dislocation density, and high quality.
+                                    This phenomenon takes place when the sheet metal contacts the tool surface (bending) and then leaves the tool surface and partially or completely loses its curvature (unbending) when it enters the die cavity. Material models used for proper simulation of springback are shown. 
                                 </Typography>
                             </CardContent>
                         </Card>
-                        
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Springback in Sheet Metals after Trimming Operation 
+                            </Typography>
+                            <CardMedia component='img' image='../images/springback2.png' alt='image of springback problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    FE simulation of sheet metal (quarter model) forming operation including springback before and after the trimming operation. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
+                    <Grid id="fiberAndNanoReinforcedPolymerComposite" item xs={2} sm={4} md={6} >
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                            Reinforced Polymer Composite
+                        </Typography>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Reinforced Polymer Composites 
+                            </Typography>
+                            <CardMedia component='img' image='../images/fiberAndNanoReinforcedPolymerComposite1.png' alt='image of springback problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Complex aerospace and automotive parts can be manufactured by heating and shaping thermoplastic composites reinforced with various types of fibers, mats, and nano fillers.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Compression Molding of Thermoset Composites  
+                            </Typography>
+                            <CardMedia component='img' image='../images/fiberAndNanoReinforcedPolymerComposite2.png' alt='image of springback problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Compression modeling is a popular manufacturing process to make complex automotive parts by pressing heated glass fiber reinforced composites into a mold.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Fiber-Reinforced Thermoplastic Composites   
+                            </Typography>
+                            <CardMedia component='img' image='../images/fiberAndNanoReinforcedPolymerComposite3.png' alt='image of springback problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Finite element simulation of forming of a multi-layer, fiber-reinforced polymer composite mat was performed with Abaqus FEA to evaluate formability, and strength of the final product. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Nano-platelet Reinforced Thermoplastic Composites 
+                            </Typography>
+                            <CardMedia component='img' image='../images/fiberAndNanoReinforcedPolymerComposite4.png' alt='image of springback problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Mechanical performance of thermoplastic polymer reinforced with graphene nanoplatelets (with different volume fraction, and diameter to thickness aspect ratio) was predicted.
+                                </Typography>
+                            </CardContent>
+                        </Card>
                     </Grid>
                 </Grid>
             </Container>
