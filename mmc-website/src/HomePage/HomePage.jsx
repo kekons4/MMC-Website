@@ -67,6 +67,21 @@ function HomePage() {
                                 <ProblemTile props={{imgSrc: "../images/stamping.png", alt: "image of stamping solved by MMC", text: "Stamping"}} />
                             </a>
                         </Grid>
+                        <Grid item xs={8} sm={6} md={4} >
+                            <a href="#materialCharacterization" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/materialCharacterization.jpg", alt: "image of material characterization solved by MMC", text: "Material Characterization"}} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={4} >
+                            <a href="#frictionStirExtrusion" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/frictionStirExtrusion.jpg", alt: "image of friction Stir Extrusion solved by MMC", text: "Friction Stir Extrusion"}} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={8} sm={6} md={4} >
+                            <a href="#springback" style={{textDecoration: "none"}}>
+                                <ProblemTile props={{imgSrc: "../images/springback.jpg", alt: "image of springback solved by MMC", text: "Springback"}} />
+                            </a>
+                        </Grid>
                     </Grid>
                 </Box>
             </Container>
@@ -155,7 +170,7 @@ function HomePage() {
                     <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid id="stamping" item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500"}}>
+                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Stamping
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -205,7 +220,7 @@ function HomePage() {
                     <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid id="multiscaleMaterialDesignModeling" item xs={2} sm={4} md={6}>
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500"}}>
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Multiscale Material <span className={classes.consulting}>Design</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -224,7 +239,7 @@ function HomePage() {
                     <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid id="rollingMaterialCharacterization" item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500"}}>
+                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Rolling
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -254,7 +269,7 @@ function HomePage() {
                     <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid id="incrementalForming" item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500"}}>
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Incremental Sheet <span className={classes.consulting}>Forming</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -300,6 +315,105 @@ function HomePage() {
                                 </Typography>
                             </CardContent>
                         </Card>
+                    </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
+                    <Grid id="materialCharacterization" item xs={2} sm={4} md={6} >
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                            Material <span className={classes.consulting}>Characterization</span>
+                        </Typography>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Material Characterization 
+                            </Typography>
+                            <CardMedia component='img' image='../images/materialCharacterization1.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Measured data from uniaxial and biaxial tests are used to characterize the mechanical properties of sheet and tubular metals. Same data are used to calibrate parameters of phenomenological yield functions. 
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Material Characterization pt.2
+                            </Typography>
+                            <CardMedia component='img' image='../images/materialCharacterization2.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                                Characterization and Modeling of Extruded Tubes  
+                            </Typography>
+                            <CardMedia component='img' image='../images/materialCharacterization3.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Experimental testing, crystal plasticity finite element modeling (CPFEM), and material modeling with Yld2004 yield function were used to study the impact of the microstructure in the O-tempered AA7075 tubes on mechanical properties, plastic anisotropy, and formability.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
+                    <Grid id="frictionStirExtrusion" item xs={2} sm={4} md={6} >
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        Friction Stir <span className={classes.consulting}>Extrusion</span>
+                        </Typography>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                            Friction Stir Extrusion pt.1 
+                            </Typography>
+                            <CardMedia component='img' image='../images/frictionStirExtrusion1.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    FSE uses relative motion and high contact forces between a non-consumable tool set and a metallic workpiece to generate frictional heating and severe plastic deformation. The result is a metal with fine grain size, low dislocation density, and high quality.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                            Friction Stir Extrusion pt.2 
+                            </Typography>
+                            <CardMedia component='img' image='../images/frictionStirExtrusion2.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Predicted yield surfaces and r value for the product after application of different levels of shear deformation.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", marginTop: "3rem", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                            Friction Stir Extrusion pt.3 
+                            </Typography>
+                            <CardMedia component='img' image='../images/frictionStirExtrusion3.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    Predicted forming limit strain diagram (FLD) based on the M-K theory.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Typography variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
+
+                    <Grid id="srpringback" item xs={2} sm={4} md={6} >
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                            Springback
+                        </Typography>
+                        <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
+                            <Typography variant='h4' gutterBottom sx={{padding: "1rem", fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>
+                            Friction Stir Extrusion pt.1 
+                            </Typography>
+                            <CardMedia component='img' image='../images/frictionStirExtrusion1.PNG' alt='image of microstructures problem solved by mmc' />
+                            <CardContent>
+                                <Typography gutterBottom variant='h6' component="div" sx={{fontSize: {xs: "0.5rem", sm: "0.5rem", md: "1rem"}}} >
+                                    FSE uses relative motion and high contact forces between a non-consumable tool set and a metallic workpiece to generate frictional heating and severe plastic deformation. The result is a metal with fine grain size, low dislocation density, and high quality.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        
                     </Grid>
                 </Grid>
             </Container>
