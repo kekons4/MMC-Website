@@ -4,15 +4,16 @@ import Card from '@mui/material/Card';
 import { CardActionArea, CardMedia, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 const StyledTile = styled(Card)(({ theme }) => ({
-    color: "#FFFDD0",
+    color: "#d32f2f",
     backgroundColor: "#efefef",
     marginRight: "5px",
     opacity: 0.9,
     borderRadius: "20px",
     maxHeight: 400,
     '&:hover': {
-      opacity: 0.5,
-      transition: "500ms"
+      opacity: 0.7,
+      color: "red",
+      transition: "500ms",
     },
   }));
 
