@@ -90,10 +90,10 @@ function HomePage() {
                     </Grid>
                 </Box>
             </Container>
-            <Container id='examplesOfProblemsSolved' maxWidth="2xl" sx={{marginTop: "5rem", marginBottom: "10rem", padding: "5rem", backgroundColor: "white"}}>
+            <Container id='examplesOfProblemsSolved' maxWidth="2xl" sx={{marginTop: "5rem", marginBottom: "10rem", padding: "2rem", backgroundColor: "white"}}>
                 <Grid id="tubeHydroforming" container spacing={0} direction="column" justifyContent="center" alignItems="center">
                     <Grid item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component="div" align='center' sx={{fontFamily: "Cabin", marginBottom: "100px", fontWeight: "500"}}>
+                        <Typography variant='h3' component="div" align='center' sx={{fontFamily: "Cabin", marginBottom: "100px", fontWeight: "500"}}>
                             Tube <span className={classes.consulting}>Hydroforming</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -134,7 +134,7 @@ function HomePage() {
                     <Typography id="3dprinting" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             3D <span className={classes.consulting}>Printing</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -175,7 +175,7 @@ function HomePage() {
                     <Typography id="stamping" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Stamping
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -244,7 +244,7 @@ function HomePage() {
                     <Typography id="rollingMaterialCharacterization" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6}>
-                        <Typography variant='h1' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Rolling
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -274,7 +274,7 @@ function HomePage() {
                     <Typography id="incrementalForming" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h3' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Incremental Sheet <span className={classes.consulting}>Forming</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -325,7 +325,7 @@ function HomePage() {
                     <Typography id="materialCharacterization" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h3' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Material <span className={classes.consulting}>Characterization</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -364,7 +364,7 @@ function HomePage() {
                     <Typography id="frictionStirExtrusion" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h3' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                         Friction Stir <span className={classes.consulting}>Extrusion</span>
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -405,7 +405,7 @@ function HomePage() {
                     <Typography id="springback" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h3' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Springback
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>
@@ -435,7 +435,7 @@ function HomePage() {
                     <Typography id="fiberAndNanoReinforcedPolymerComposite" variant='p' component='div' align='center' sx={{border: {xs: "3px #607d8b solid", sm: "4px #607d8b solid", md: "5px #607d8b solid"}, borderRadius: "10px", height: "5rem", marginTop: "50px", marginBottom: "50px", opacity: "0.7"}}></Typography>
 
                     <Grid item xs={2} sm={4} md={6} >
-                        <Typography variant='h2' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
+                        <Typography variant='h3' component='div' align='center' sx={{marginBottom: "3rem", fontWeight: "500", fontFamily: "Cabin"}}>
                             Reinforced Polymer Composite
                         </Typography>
                         <Card sx={{maxWidth: 800, boxShadow: "2px 2px 15px -3px black", backgroundColor: "#efefef"}}>

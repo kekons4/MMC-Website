@@ -21,7 +21,7 @@ function ProblemTile(props) {
     return (
         <StyledTile variant="outlined">
             <CardActionArea>
-                <Typography variant="h6" sx={{fontSize: {xs: "2.5rem", sm: "3.5rem", md: "4rem"}, fontWeight: "900", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>{props.props.text}</Typography>
+                <Typography variant="h6" sx={{fontSize: {xs: "2.5rem", sm: "3.5rem", md: "3rem"}, fontWeight: "900", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>{props.props.text}</Typography>
                 <CardMedia component="img" image={props.props.imgSrc} title={props.props.alt} height="400" style={{width: "100%"}} />
             </CardActionArea>
         </StyledTile>
